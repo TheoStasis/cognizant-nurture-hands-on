@@ -1,0 +1,13 @@
+<bean id="in" class="com.cognizant.spring_learn.Country">
+    <property name="code" value="IN"/><property name="name" value="India"/>
+</bean>
+<bean id="countryList" class="java.util.ArrayList">
+    <constructor-arg>
+        <list>
+            <ref bean="in" />
+            <ref bean="us" />
+            <ref bean="de" />
+            <ref bean="jp" />
+        </list>
+    </constructor-arg>
+</bean>
